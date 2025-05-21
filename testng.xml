@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="api.listeners.TestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/khush/Desktop/projects/petStoreAutomation/src/test/java/api/test">
+        <classes>
+            <class name="api.test.UserDataDriverTest">
+                <methods>
+                    <include name="createUser"/>
+                    <include name="getuser"/>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+            <class name="api.test.UserTests">
+                <methods>
+                    <include name="createUser"/>
+                    <include name="getUserByName"/>
+                    <include name="updateUser"/>
+                    <include name="deleteUserByName"/>
+                </methods>
+            </class>
+            <class name="api.test.UserTestsFromConfigProperties">
+                <methods>
+                    <include name="createUser"/>
+                    <include name="getuser"/>
+                    <include name="updateUser"/>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
