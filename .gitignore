@@ -34,5 +34,14 @@ build/
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
+# Java/Maven
+
+*.log
+*.class
+
+# IDE
+.idea/
+
+# OS
 .DS_Store
+Thumbs.db
